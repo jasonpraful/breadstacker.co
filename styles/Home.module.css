@@ -1,0 +1,84 @@
+.splitTop {
+  width: 100%;
+  position: fixed;
+  overflow-y: hidden;
+  height: 50%;
+
+  top: 0;
+}
+.splitBottom {
+  width: 100%;
+  position: fixed;
+  overflow-y: hidden;
+  height: 50%;
+  justify-content: center;
+  align-items: center;
+  bottom: 0;
+}
+
+.imgstyle {
+  z-index: 111;
+  display: block;
+  margin-top: 8%;
+  margin-left: auto;
+  margin-right: auto;
+  object-fit: cover;
+  border-radius: 20%;
+  width: 200px;
+  height: 200px;
+  transition: transform 0.2s;
+  -webkit-box-shadow: 5px 5px 15px 5px #000000;
+  box-shadow: 5px 5px 25px 5px red;
+}
+.imgstyle:hover {
+  transform: scale(1.5);
+}
+
+.topImageBackground {
+  z-index: -1;
+  opacity: 0.6;
+  object-fit: cover;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: auto;
+}
+.backImageBackground {
+  z-index: -1;
+  opacity: 0.6;
+  object-fit: cover;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: auto;
+}
+
+@media screen and (max-width: 480px) {
+  .topImageBackground {
+    z-index: -1;
+    opacity: 0.6;
+    height: 100%;
+  }
+  .backImageBackground {
+    z-index: -1;
+    opacity: 0.6;
+    height: 100%;
+  }
+  .imgstyle {
+    z-index: 111;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    align-self: center;
+    object-fit: cover;
+    margin-top: 20%;
+    border-radius: 20%;
+    width: 150px;
+    height: 150px;
+    transition: transform 0.2s;
+    -webkit-box-shadow: 5px 5px 15px 5px #000000;
+    box-shadow: 5px 5px 25px 5px red;
+  }
+}

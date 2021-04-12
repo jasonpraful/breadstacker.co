@@ -1,0 +1,10 @@
+{
+    "functions": {
+      "pages/api/instagram.js": {
+        "includeFiles": "_files/**"
+      },
+      "pages/api/twitter.js": {
+        "includeFiles": "_files/**"
+      }
+    }
+  }
